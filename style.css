@@ -1,0 +1,131 @@
+body {
+    align-items: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.2);
+    min-width:100px;
+    
+}
+
+.logo {
+    display: block;
+    margin:auto;
+    background-color:rgb(144, 144, 247);
+    padding:30px;
+    margin-bottom: 10px;
+}
+
+
+
+.navBarLower {
+    flex-direction: row;
+    padding: 10px;
+    
+}   
+
+.navBarLower a{
+    font-size: 18px;
+        color: #0E30E9;
+        text-decoration: none;
+        margin-bottom: 10px;
+        transition: color 0.3s;
+        border-style: solid;
+        padding: 10px;
+        border-radius: 5px;
+        border-width: 2px;
+        box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.selected{
+    
+    color: white;
+    
+}
+
+.navBarLower a:hover{
+
+        background-color: #0E30E9; /* Change background color on hover */
+        color: white;
+
+}
+
+.dropdown-button{
+    padding:10px;
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #0E30E9;
+    margin-bottom:20px;
+    border-radius: 5px;
+    box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.dropdown-content a {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    color: #0E30E9;
+    
+    transition: color 0.3s;
+    width: fit-content;
+    margin:auto;
+}
+
+.dropdown-content a:hover {
+    background-color: white; /* Change background color on hover */
+    color: #0E30E9;
+
+}
+
+@media screen and (max-width: 980px) {
+    
+    .navBarLower {
+        text-align: center; /* Center-align the navigation items */
+        flex-direction: row;
+        margin:20px;
+        column-width: 20%;
+        flex-wrap: wrap;
+        flex-basis: 10%;
+        justify-content: space-between;/* Stack the navigation items vertically */
+    }
+
+    .navBarLower a{
+        justify-content: space-between;
+        font-size: 18px;
+        color: #0E30E9;
+        text-decoration: none;
+        margin: 5px;
+        gap: 20px;
+        transition: color 0.3s;
+        border-style: solid;
+        padding: 10px;
+        border-radius: 5px;
+        border-width: 2px;
+        box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .logoWeb {
+        width:100%;
+    }
+
+}
+
+
+
+
